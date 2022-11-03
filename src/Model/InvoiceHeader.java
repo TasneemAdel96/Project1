@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Model;
+import View.Invoice;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -62,6 +63,16 @@ public class InvoiceHeader {
     public void setDate(Date date) {
         this.date = date;
     }
+    
+    @Override
+    public String toString() {
+        return "InvoiceHeader{" + "num=" + num + ", date=" + date + ", name=" + name + '}';
+    }
+    
+    public String getAsCSV() {
+        return num + "," + Invoice.sdf.format(date) + "," + name;
+    }
+    
     
     
 }

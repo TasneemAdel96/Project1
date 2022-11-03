@@ -111,7 +111,7 @@ public class Invoice extends javax.swing.JFrame {
 
         jLabel1.setText("Invoice Table");
 
-        jButton1.setText("Create New Invoice");
+        jButton1.setText("New Invoice");
 
         jLabel2.setText("Invoice Num");
 
@@ -222,9 +222,9 @@ public class Invoice extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jButton3.setText("Save");
+        jButton3.setText("New Item");
 
-        jButton4.setText("Cancel");
+        jButton4.setText("Delete Item");
 
         jButton5.setText("Delete Invoice");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -238,7 +238,7 @@ public class Invoice extends javax.swing.JFrame {
         jMenuItem1.setText("Load Files");
         jMenu1.add(jMenuItem1);
 
-        jMenuItem2.setText("Save Files");
+        jMenuItem2.setText("Save Data");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2ActionPerformed(evt);
@@ -275,7 +275,7 @@ public class Invoice extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(56, 56, 56)
                         .addComponent(jButton3)
-                        .addGap(152, 152, 152)
+                        .addGap(113, 113, 113)
                         .addComponent(jButton4)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -468,7 +468,7 @@ public class Invoice extends javax.swing.JFrame {
         return num + 1;
 
     }
+     
     
-  
     
 }

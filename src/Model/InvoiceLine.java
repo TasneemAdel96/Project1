@@ -19,6 +19,7 @@ public class InvoiceLine {
         this.price = price;
         this.count = count;
         this.invoice = invoice;
+        this.invoice.getLines().add(this);
     }
 
     public double getTotal() {
@@ -55,6 +56,15 @@ public class InvoiceLine {
 
     public void setCount(int count) {
         this.count = count;
+    }
+
+    @Override
+    public String toString() {
+        return "InvoiceLine{" + "name=" + name + ", price=" + price + ", count=" + count + '}';
+    }
+    
+     public String getAsCSV() {
+        return invoice.getNum() + "," + name + "," + price + "," + count;
     }
     
 }

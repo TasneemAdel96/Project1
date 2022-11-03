@@ -33,8 +33,8 @@ public class InvoiceHeaderDialog extends JDialog {
         okBtn.setActionCommand("newInvoiceOK");
         cancelBtn.setActionCommand("newInvoiceCancel");
         
-        okBtn.addActionListener((ActionListener) frame.getController());
-        cancelBtn.addActionListener((ActionListener) frame.getController());
+        okBtn.addActionListener(frame.getController());
+        cancelBtn.addActionListener(frame.getController());
         setLayout(new GridLayout(3, 2));
         
         add(invDateLbl);
